@@ -35,3 +35,6 @@ Anything between the two mail scripts will be included in the body. The lines ca
 NOTES:
 - I strongly recommend adding the image to be used as the logo to the images database in ServiceNow to ensure there are no issues with retrieving the image
 - All size, width and color values take in valid CSS property values. If they work in general CSS files, they should work here. Default values and examples are provided to assist in understanding what values will work.
+
+#### Advanced Configuration
+The template utilizes the mail scripts notification_header and notification_footer. These mail scripts provide the html for the generic template. Feel free to modify the html added by these scripts to further customize the template. Even if the generic template provided is really too generic, the scripts will still allow you to centrally manage the look and feel of mutliple email notifications in one place.
