@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-05-06 00:32:40">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Email Notifications Template</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5fd0b70b37bd93009bb6ded993990e2d</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>776f7b0737fd93009bb6ded993990e14</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="">054cdcc2ff200200158bffffffffff94</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_email_803ca946db3057c4a09bf6e9af9619e5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_email"&gt;&lt;sys_script_email action="INSERT_OR_UPDATE"&gt;&lt;name&gt;notification_header&lt;/name&gt;&lt;new_lines_to_html&gt;false&lt;/new_lines_to_html&gt;&lt;script&gt;&lt;![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+	// get styling and logo
+	var logoSrc = 'images/logos/logo_service-now_light.png';
+	var logo = '&lt;img style="align: baseline; margin-left: -5px; margin-bottom:10px; transform:scale(0.75);" title="" src="' + logoSrc + '" alt="" align="baseline" border="" hspace="" vspace="" /&gt;';
+	var fontFamily = gs.getProperty('gotham');
+	var borderColor = "#de293e";
+	var headerColor = "color: #f9f9f9;" +
+	  "background: #0068b5;";
+	var bodyColor = '#f9f9f9';
+	
+	var html = '&lt;div style="float: left; width: 100%; font-family: ' + fontFamily + ';"&gt;' +
+		'&lt;table style="height: 80px; margin-left: auto; margin-right: auto; border-radius: 5px; border: 3px solid ' + borderColor + '" width="700px" frame="box"&gt;' +
+			'&lt;thead&gt;' +
+				'&lt;tr style="height: 40px; text-align: left;' + headerColor + ';"&gt;' +
+					'&lt;td style="padding: 10px 0px 0px 10px;"&gt;' +
+						 logo +
+					 '&lt;/td&gt;' +
+				'&lt;/tr&gt;' +
+			'&lt;/thead&gt;' +
+			'&lt;tbody style="background-color: ' + bodyColor + ';"&gt;' +
+				'&lt;tr&gt;' +
+					'&lt;td style="padding: 10px 35px 10px 35px;"&gt;';
+	
+	template.print(html);
+
+})(current, template, email, email_action, event);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;daniel.gimmler&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-13 18:15:09&lt;/sys_created_on&gt;&lt;sys_id&gt;803ca946db3057c4a09bf6e9af9619e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;notification_header&lt;/sys_name&gt;&lt;sys_package display_value=""&gt;054cdcc2ff200200158bffffffffff94&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value=""&gt;054cdcc2ff200200158bffffffffff94&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_803ca946db3057c4a09bf6e9af9619e5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-05 23:32:55&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-163814691</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>336f334737fd93009bb6ded993990e25</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332a6b1e30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_header</target_name>
+<type>Email Script</type>
+<update_domain>global</update_domain>
+<update_guid>a8c1bb0b6ebd930090f9dc9656406ee9</update_guid>
+<update_guid_history>a8c1bb0b6ebd930090f9dc9656406ee9:-163814691,aa85c342083d130002b6b317f0c5cfe4:138553702</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_94b3ff8b37bd93009bb6ded993990e60</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Logo margin-left (must be valid css margin value - ex1: -5px, ex2: 10%)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_logo_margin_left</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:41:21</sys_created_on><sys_id>94b3ff8b37bd93009bb6ded993990e60</sys_id><sys_mod_count>3</sys_mod_count><sys_name>notification_logo_margin_left</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_94b3ff8b37bd93009bb6ded993990e60</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:50:46</sys_updated_on><type>string</type><value>10px</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=94b3ff8b37bd93009bb6ded993990e60"/></record_update>]]></payload>
+<payload_hash>1744308972</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>336f7b0737fd93009bb6ded993990e16</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b709b40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_logo_margin_left</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>c6d5fb0ffabd9300130a9cbcc24e0a3d</update_guid>
+<update_guid_history>c6d5fb0ffabd9300130a9cbcc24e0a3d:1744308972,1bb53b0f6fbd930025f192192e884ee8:-71734343,25443fcb47bd93004889092fb62a5a7f:-440251517,ecb3ff8b97bd9300dc6579429d784263:-1957622058</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_ccf877cf37bd93009bb6ded993990ea5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Body Background Color (must be valid css color value - ex1: #f9f9f9, ex2: rgb(211, 56, 46))</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_body_background_color</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:04:17</sys_created_on><sys_id>ccf877cf37bd93009bb6ded993990ea5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_body_background_color</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_ccf877cf37bd93009bb6ded993990ea5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:04:17</sys_updated_on><type>string</type><value>#f9f9f9</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=ccf877cf37bd93009bb6ded993990ea5"/></record_update>]]></payload>
+<payload_hash>-1693716175</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>376f334737fd93009bb6ded993990e24</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c36d180000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_body_background_color</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>18f877cf6ebd9300d3e71c82ba7846a9</update_guid>
+<update_guid_history>18f877cf6ebd9300d3e71c82ba7846a9:-1693716175</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_3756334f37bd93009bb6ded993990e46</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Logo margin-bottom (must be valid css margin value - ex1: 5px, ex2: 5%)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_logo_margin_bottom</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:53:04</sys_created_on><sys_id>3756334f37bd93009bb6ded993990e46</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_margin_bottom</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_3756334f37bd93009bb6ded993990e46</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:53:04</sys_updated_on><type>string</type><value>5px</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=3756334f37bd93009bb6ded993990e46"/></record_update>]]></payload>
+<payload_hash>-1653324019</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>376f7b0737fd93009bb6ded993990e15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b927a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_logo_margin_bottom</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>4c66334f86bd93005f202a0568075049</update_guid>
+<update_guid_history>4c66334f86bd93005f202a0568075049:-1653324019</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_7588f7cf37bd93009bb6ded993990e38</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_header_background_color" name="notification_header_background_color">c5787bcf37bd93009bb6ded993990e5f</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:02:29</sys_created_on><sys_id>7588f7cf37bd93009bb6ded993990e38</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_header_background_color.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_7588f7cf37bd93009bb6ded993990e38</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:02:29</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-682222291</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>3b6f334737fd93009bb6ded993990e23</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c1c3dc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_header_background_color.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>7d883fcf70bd9300180e73dad1e4cbb7</update_guid>
+<update_guid_history>7d883fcf70bd9300180e73dad1e4cbb7:-682222291</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_40d9bf0337fd93009bb6ded993990e43</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_footer_font_color" name="notification_footer_font_color">41c9b70337fd93009bb6ded993990eda</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:08:06</sys_created_on><sys_id>40d9bf0337fd93009bb6ded993990e43</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_footer_font_color.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_40d9bf0337fd93009bb6ded993990e43</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:08:06</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>1488865448</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>3f6f334737fd93009bb6ded993990e22</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c6e9880000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_footer_font_color.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>80d9bf03d5fd93003d39737b89353a45</update_guid>
+<update_guid_history>80d9bf03d5fd93003d39737b89353a45:1488865448</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_fff8b30337fd93009bb6ded993990eca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_body_background_color" name="notification_body_background_color">ccf877cf37bd93009bb6ded993990ea5</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:04:32</sys_created_on><sys_id>fff8b30337fd93009bb6ded993990eca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_body_background_color.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_fff8b30337fd93009bb6ded993990eca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:04:32</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-348176341</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>736f334737fd93009bb6ded993990e24</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c3a4760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_body_background_color.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>33f8b303bcfd9300694587d863630bcd</update_guid>
+<update_guid_history>33f8b303bcfd9300694587d863630bcd:-348176341</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_1b79b70337fd93009bb6ded993990ed3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Footer Color (must be valid css color value - ex1: #f9f9f9, ex2: rgb(211, 56, 46))</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_footer_color</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:06:40</sys_created_on><sys_id>1b79b70337fd93009bb6ded993990ed3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_footer_color</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_1b79b70337fd93009bb6ded993990ed3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:06:40</sys_updated_on><type>string</type><value>#313b46</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=1b79b70337fd93009bb6ded993990ed3"/></record_update>]]></payload>
+<payload_hash>-1107992502</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>736f7b0737fd93009bb6ded993990e15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c59eeb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_footer_color</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>6379b7031cfd93008dd224dfbb71b7d7</update_guid>
+<update_guid_history>6379b7031cfd93008dd224dfbb71b7d7:-1107992502</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_6776334f37bd93009bb6ded993990e4e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_logo_margin_top" name="notification_logo_margin_top">cd163b0f37bd93009bb6ded993990ead</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:53:36</sys_created_on><sys_id>6776334f37bd93009bb6ded993990e4e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_margin_top.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_6776334f37bd93009bb6ded993990e4e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:53:36</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-260089859</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>776f334737fd93009bb6ded993990e23</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b9a0a90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_logo_margin_top.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>6b76ff4f38bd9300d2539c59fbd9666b</update_guid>
+<update_guid_history>6b76ff4f38bd9300d2539c59fbd9666b:-260089859</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_3476bf4f37bd93009bb6ded993990e56</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_logo_margin_bottom" name="notification_logo_margin_bottom">3756334f37bd93009bb6ded993990e46</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:53:25</sys_created_on><sys_id>3476bf4f37bd93009bb6ded993990e56</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_margin_bottom.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_3476bf4f37bd93009bb6ded993990e56</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:53:25</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>1610004564</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>7b6f334737fd93009bb6ded993990e22</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b975b60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_logo_margin_bottom.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>7476bf4fd6bd93005d1a34d6246eee58</update_guid>
+<update_guid_history>7476bf4fd6bd93005d1a34d6246eee58:1610004564</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_98037f8b37bd93009bb6ded993990ef3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_properties_category"&gt;&lt;sys_properties_category action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Notifications&lt;/name&gt;&lt;sys_class_name&gt;sys_properties_category&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-05 23:38:30&lt;/sys_created_on&gt;&lt;sys_id&gt;98037f8b37bd93009bb6ded993990ef3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notifications&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_category_98037f8b37bd93009bb6ded993990ef3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-05 23:38:30&lt;/sys_updated_on&gt;&lt;title&gt;&lt;![CDATA[&lt;p&gt;Basline notificaitons template&lt;/p&gt;]]&gt;&lt;/title&gt;&lt;/sys_properties_category&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=98037f8b37bd93009bb6ded993990ef3"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1989637694</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>7b6f7b0737fd93009bb6ded993990e16</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332abcffd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>Notifications</target_name>
+<type>System Property Category</type>
+<update_domain>global</update_domain>
+<update_guid>a2037f8b1fbd9300e22d54afe4744f66</update_guid>
+<update_guid_history>a2037f8b1fbd9300e22d54afe4744f66:1989637694</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_email_5f2ef30737fd93009bb6ded993990eaf</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_email"&gt;&lt;sys_script_email action="INSERT_OR_UPDATE"&gt;&lt;name&gt;notification_header&lt;/name&gt;&lt;new_lines_to_html&gt;false&lt;/new_lines_to_html&gt;&lt;script&gt;&lt;![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+	// get configured properties
+	var logoSrc = gs.getProperty('notification_logo_src') || 'images/logos/logo_service-now_light.png';
+	var logoMarginTop = gs.getProperty('notification_logo_margin_top') || '0px';
+	var logoMarginBottom = gs.getProperty('notification_logo_margin_bottom') || '0px';
+	var logoMarginLeft = gs.getProperty('notification_logo_margin_left') || '0px';
+	var logoWidth = gs.getProperty('notification_logo_width') || '100%';
+	
+	var fontFamily = gs.getProperty('gotham');
+	
+	var borderColor = gs.getProperty('notification_border_color') || '#d3382e';
+	var headerFontColor = gs.getProperty('notification_header_font_color') || '#f9f9f9';
+	var headerBackgroundColor = gs.getProperty('notification_header_background_color') || '#313b46';
+	
+	var bodyColor = gs.getProperty('notification_body_background_color') || '#f9f9f9';
+	
+	// get styling and logo
+	var logo = '&lt;img style="align: baseline; margin-top:' + logoMarginTop + '; margin-bottom:' + logoMarginBottom + '; margin-left:' + logoMarginLeft + '; margin-bottom:10px; width:' + logoWidth + ';" title="" src="' + logoSrc + '" alt="logo" align="baseline" border="" hspace="" vspace="" /&gt;';
+	var headerColor = "color:" + headerFontColor +
+	  ";background:" + headerBackgroundColor + ";";
+	
+	// get html
+	var html = '&lt;div style="float: left; width: 100%; font-family: ' + fontFamily + ';"&gt;' +
+		'&lt;table style="height: 80px; margin-left: auto; margin-right: auto; border-radius: 5px; border: 3px solid ' + borderColor + '" width="700px" frame="box"&gt;' +
+			'&lt;thead&gt;' +
+				'&lt;tr style="height: 40px; text-align: left;' + headerColor + ';"&gt;' +
+					'&lt;td style="padding: 10px 0px 0px 10px;"&gt;' +
+						 logo +
+					 '&lt;/td&gt;' +
+				'&lt;/tr&gt;' +
+			'&lt;/thead&gt;' +
+			'&lt;tbody style="background-color: ' + bodyColor + ';"&gt;' +
+				'&lt;tr&gt;' +
+					'&lt;td style="padding: 10px 35px 10px 35px;"&gt;';
+	
+	template.print(html);
+
+})(current, template, email, email_action, event);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-06 00:27:51&lt;/sys_created_on&gt;&lt;sys_id&gt;5f2ef30737fd93009bb6ded993990eaf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;notification_header&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_5f2ef30737fd93009bb6ded993990eaf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-06 00:27:51&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1016340004</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>7f6f334737fd93009bb6ded993990e24</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332d8fc760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_header</target_name>
+<type>Email Script</type>
+<update_domain>global</update_domain>
+<update_guid>d95ef30784fd9300a5137ee69ced70b8</update_guid>
+<update_guid_history>d95ef30784fd9300a5137ee69ced70b8:1016340004</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_6dc23b8b37bd93009bb6ded993990e60</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Logo URL (recommended to host source image in ServiceNow)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_logo_src</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:37:59</sys_created_on><sys_id>6dc23b8b37bd93009bb6ded993990e60</sys_id><sys_mod_count>4</sys_mod_count><sys_name>notification_logo_src</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_6dc23b8b37bd93009bb6ded993990e60</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:18:40</sys_updated_on><type>string</type><value>images/logos/logo_service-now_light.png</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=6dc23b8b37bd93009bb6ded993990e60"/></record_update>]]></payload>
+<payload_hash>-960394372</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>7f6f7b0737fd93009bb6ded993990e15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332d09b5f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_logo_src</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>d33cbb8362fd93007fd1b3d1e46cb8e3</update_guid>
+<update_guid_history>d33cbb8362fd93007fd1b3d1e46cb8e3:-960394372,97b53b0f62bd930053807a8bce07d5e6:2118898247,4b23ff8bbcbd9300f45c36c80a2af379:205943508,78f2fb8ba2bd9300d9d7a962c5f7ac6f:2118898247,4be2b78b85bd93006a5b816ae898a71f:205943508</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_5408bf8f37bd93009bb6ded993990e60</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_header_font_color" name="notification_header_font_color">58e7ff8f37bd93009bb6ded993990e21</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:00:12</sys_created_on><sys_id>5408bf8f37bd93009bb6ded993990e60</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_header_font_color.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_5408bf8f37bd93009bb6ded993990e60</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:00:12</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>1173683932</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>b36f334737fd93009bb6ded993990e23</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332bfad250000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_header_font_color.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>dc0837cfd5bd9300787cd95ffe99f48d</update_guid>
+<update_guid_history>dc0837cfd5bd9300787cd95ffe99f48d:1173683932</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_3067f78f37bd93009bb6ded993990e0b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_logo_border_color" name="notification_logo_border_color">ce57734f37bd93009bb6ded993990e2a</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:57:30</sys_created_on><sys_id>3067f78f37bd93009bb6ded993990e0b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_border_color.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_3067f78f37bd93009bb6ded993990e0b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:57:30</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-1619405762</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>b76f334737fd93009bb6ded993990e22</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332bd35c80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_logo_border_color.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>7c673b8fbdbd9300cd03333f5ed29bcc</update_guid>
+<update_guid_history>7c673b8fbdbd9300cd03333f5ed29bcc:-1619405762</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_c5787bcf37bd93009bb6ded993990e5f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Header Font Color (must be valid css color value - ex1: #f9f9f9, ex2: rgb(211, 56, 46))</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_header_background_color</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:02:10</sys_created_on><sys_id>c5787bcf37bd93009bb6ded993990e5f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_header_background_color</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_c5787bcf37bd93009bb6ded993990e5f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:02:10</sys_updated_on><type>string</type><value>#313b46</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=c5787bcf37bd93009bb6ded993990e5f"/></record_update>]]></payload>
+<payload_hash>1417610555</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>b76f7b0737fd93009bb6ded993990e16</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c17c180000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_header_background_color</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>d9787bcf48bd9300f6e5c7d5798e8762</update_guid>
+<update_guid_history>d9787bcf48bd9300f6e5c7d5798e8762:1417610555</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_ce57734f37bd93009bb6ded993990e2a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Border Color (must be valid css color value - ex1: #f9f9f9, ex2: rgb(211, 56, 46))</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_border_color</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:57:19</sys_created_on><sys_id>ce57734f37bd93009bb6ded993990e2a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>notification_border_color</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_ce57734f37bd93009bb6ded993990e2a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:00:41</sys_updated_on><type>string</type><value>#d3382e</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=ce57734f37bd93009bb6ded993990e2a"/></record_update>]]></payload>
+<payload_hash>1122131587</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>bb6f334737fd93009bb6ded993990e24</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c021760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_border_color</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>6318738f50bd930074cb896843803aa5</update_guid>
+<update_guid_history>6318738f50bd930074cb896843803aa5:1122131587,8eb73b8f20bd930059883b75ac67e365:1556422907,3aa73b4fdbbd93000c837a6095bda1c2:1135058345,d257734fc3bd930015e3c8190d09302e:1556422907</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_c165f70f37bd93009bb6ded993990ebc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Notification">f94ee721ff2002002841ffffffffff20</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image>images/icons/changes.gif</image><link_type>DIRECT</link_type><map_page/><mobile_title>Change Properties</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>320</order><override_menu_roles>false</override_menu_roles><query>system_properties_ui.do?sysparm_title=Notification%20Template%20Configuration&amp;sysparm_category=Notifications</query><report/><roles>admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:48:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c165f70f37bd93009bb6ded993990ebc</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Notification Template Config</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_c165f70f37bd93009bb6ded993990ebc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:20:48</sys_updated_on><timeline_page/><title>Notification Template Config</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>2105328107</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>bb6f7b0737fd93009bb6ded993990e14</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332d28a3e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>Notification Template Config</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>c2bc33c3d3fd9300a3f0f729b2beed11</update_guid>
+<update_guid_history>c2bc33c3d3fd9300a3f0f729b2beed11:2105328107,ad7c3f8300fd930030dd42f53d19efe6:-1690422868,447cff831bfd9300f6c2325fe40691e0:-52119084,cd65f70f40bd9300bf374c1330a154bd:1413588508</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_58e7ff8f37bd93009bb6ded993990e21</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Header Font Color (must be valid css color value - ex1: #f9f9f9, ex2: rgb(211, 56, 46))</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_header_font_color</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:59:39</sys_created_on><sys_id>58e7ff8f37bd93009bb6ded993990e21</sys_id><sys_mod_count>1</sys_mod_count><sys_name>notification_header_font_color</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_58e7ff8f37bd93009bb6ded993990e21</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:00:01</sys_updated_on><type>string</type><value>#f9f9f9</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=58e7ff8f37bd93009bb6ded993990e21"/></record_update>]]></payload>
+<payload_hash>50186483</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>bb6f7b0737fd93009bb6ded993990e15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332bf87af0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_header_font_color</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>82f73b8f2dbd9300e5ac178432886c73</update_guid>
+<update_guid_history>82f73b8f2dbd9300e5ac178432886c73:50186483,60e7ff8f5abd93001d2a10b29c986625:956929049</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_9fc3bf8b37bd93009bb6ded993990e01</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_logo_margin_left" name="notification_logo_margin_left">94b3ff8b37bd93009bb6ded993990e60</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:41:50</sys_created_on><sys_id>9fc3bf8b37bd93009bb6ded993990e01</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_margin_left.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_9fc3bf8b37bd93009bb6ded993990e01</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:41:50</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-547209625</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>bf6f334737fd93009bb6ded993990e23</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332aedb0a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_logo_margin_left.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>9fc33bcba0bd93007a300b1756b6722a</update_guid>
+<update_guid_history>9fc33bcba0bd93007a300b1756b6722a:-547209625</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_22037f8b37bd93009bb6ded993990e67</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>1</order><property display_value="notification_logo_src" name="notification_logo_src">6dc23b8b37bd93009bb6ded993990e60</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:38:30</sys_created_on><sys_id>22037f8b37bd93009bb6ded993990e67</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_src.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_22037f8b37bd93009bb6ded993990e67</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:38:30</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-237145837</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>f36f334737fd93009bb6ded993990e22</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332abd0270000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_logo_src.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>a6037f8b1cbd9300be0a8a6615565168</update_guid>
+<update_guid_history>a6037f8b1cbd9300be0a8a6615565168:-237145837</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_email_bf6e7fc337fd93009bb6ded993990ee7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_email"&gt;&lt;sys_script_email action="INSERT_OR_UPDATE"&gt;&lt;name&gt;notification_footer&lt;/name&gt;&lt;new_lines_to_html&gt;false&lt;/new_lines_to_html&gt;&lt;script&gt;&lt;![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+	
+	var footerBuffer = '100';
+	var portalHref = gs.getProperty('glide.servlet.uri');
+	var portalLink = '&lt;a href="' + portalHref + '"&gt;HERE&lt;/a&gt;';
+	var defaultFooterMessage = '&lt;p style="font-size: 12pt;"&gt;' +
+			'More details are available in ServiceNow ' + portalLink + '.' + '&lt;/p&gt;' +
+		'&lt;p style="font-size: 12pt;"&gt;' +
+			'Thank You&lt;br/&gt;' +
+		'&lt;/p&gt;';
+	var footerColor = gs.getProperty('notification_footer_color') || '#313b46';
+	var footerMessage = gs.getProperty('notification_footer_message') || defaultFooterMessage;
+			var html = '&lt;hr/&gt;' + footerMessage +
+					'&lt;/td&gt;' +
+				'&lt;/tr&gt;' +
+			'&lt;/tbody&gt;' +
+			'&lt;tfoot&gt;' +
+				'&lt;tr style="position: relative; float: center; background-color: ' + footerColor + ';"&gt;' +
+					'&lt;td&gt;&amp;nbsp;&lt;/td&gt;' +
+				'&lt;/tr&gt;' +
+			'&lt;/tfoot&gt;' +
+		'&lt;/table&gt;'+
+	'&lt;/div&gt;';
+	
+	for(var i=0; i&lt; footerBuffer.length; i++)
+		html += '&lt;p&gt;&amp;nbsp;&lt;/p&gt;';
+	
+	template.print(html);
+
+})(current, template, email, email_action, event);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-06 00:28:44&lt;/sys_created_on&gt;&lt;sys_id&gt;bf6e7fc337fd93009bb6ded993990ee7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;notification_footer&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_bf6e7fc337fd93009bb6ded993990ee7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-06 00:28:44&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;/record_update&gt;</payload>
+<payload_hash>655283573</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>f36f334737fd93009bb6ded993990e25</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332d9ce4a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_footer</target_name>
+<type>Email Script</type>
+<update_domain>global</update_domain>
+<update_guid>5e8ebfc3defd93002e86d539bb9009f9</update_guid>
+<update_guid_history>5e8ebfc3defd93002e86d539bb9009f9:655283573</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_aa543fcb37bd93009bb6ded993990e5b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Logo Width (must be valid css width value - ex1: 100px, ex2: 50%)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_logo_width</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:44:15</sys_created_on><sys_id>aa543fcb37bd93009bb6ded993990e5b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>notification_logo_width</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_aa543fcb37bd93009bb6ded993990e5b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:51:20</sys_updated_on><type>string</type><value>50%</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=aa543fcb37bd93009bb6ded993990e5b"/></record_update>]]></payload>
+<payload_hash>-1457316722</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>f36f7b0737fd93009bb6ded993990e16</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b7934a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_logo_width</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>7af5734f3ebd9300d81b362bae065042</update_guid>
+<update_guid_history>7af5734f3ebd9300d81b362bae065042:-1457316722,38b4f30f2fbd93009e517357181c947f:1348276974,f2543fcbdcbd9300cf0e975db7e43e5f:-863599272</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_cd163b0f37bd93009bb6ded993990ead</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Logo margin-top (must be valid css margin value - ex1: 5px, ex2: 5%)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_logo_margin_top</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:51:47</sys_created_on><sys_id>cd163b0f37bd93009bb6ded993990ead</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_margin_top</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_cd163b0f37bd93009bb6ded993990ead</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:51:47</sys_updated_on><type>string</type><value>5px</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=cd163b0f37bd93009bb6ded993990ead"/></record_update>]]></payload>
+<payload_hash>-1245563</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>f76f334737fd93009bb6ded993990e24</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b7fbbd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_logo_margin_top</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>9116b74f95bd9300e949e049495617fa</update_guid>
+<update_guid_history>9116b74f95bd9300e949e049495617fa:-1245563</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_41c9b70337fd93009bb6ded993990eda</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Notification Footer Message (can include html)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>notification_footer_message</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:07:53</sys_created_on><sys_id>41c9b70337fd93009bb6ded993990eda</sys_id><sys_mod_count>4</sys_mod_count><sys_name>notification_footer_message</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_41c9b70337fd93009bb6ded993990eda</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:17:02</sys_updated_on><type>string</type><value>&lt;p style="font-size: 12pt;"&gt;&#13;
+    More details are available in ServiceNow&#13;
+&lt;/p&gt;&#13;
+&lt;p style="font-size: 12pt;"&gt;&#13;
+    Thanks&lt;br/&gt;&#13;
+&lt;/p&gt;</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=41c9b70337fd93009bb6ded993990eda"/></record_update>]]></payload>
+<payload_hash>911342734</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:39</sys_created_on>
+<sys_id>f76f7b0737fd93009bb6ded993990e15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332cf195b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:39</sys_updated_on>
+<table/>
+<target_name>notification_footer_message</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>c3db3783bbfd93001a3486f8a03f0360</update_guid>
+<update_guid_history>c3db3783bbfd93001a3486f8a03f0360:911342734,9ecbb3839efd9300abdd0e642770cb20:95217227,a48bbf034efd9300c9c41904bef80b56:-1999021077,1adab743c3fd9300d2ff0a2fc6aeb2da:385134769,99c9b703d2fd9300f7d7fb1b1546e5dd:757479049</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_82897b0337fd93009bb6ded993990e82</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_footer_color" name="notification_footer_color">1b79b70337fd93009bb6ded993990ed3</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-06 00:06:52</sys_created_on><sys_id>82897b0337fd93009bb6ded993990e82</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_footer_color.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_82897b0337fd93009bb6ded993990e82</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-06 00:06:52</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-2075505240</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>fb6f334737fd93009bb6ded993990e23</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332c5c7db0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_footer_color.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>c2897b0373fd930035f8e15cd88c7f84</update_guid>
+<update_guid_history>c2897b0373fd930035f8e15cd88c7f84:-2075505240</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_42c43bcb37bd93009bb6ded993990e74</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Notifications">98037f8b37bd93009bb6ded993990ef3</category><order>100</order><property display_value="notification_logo_width" name="notification_logo_width">aa543fcb37bd93009bb6ded993990e5b</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-05-05 23:46:07</sys_created_on><sys_id>42c43bcb37bd93009bb6ded993990e74</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_logo_width.Notifications</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_42c43bcb37bd93009bb6ded993990e74</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-05-05 23:46:07</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>1899180835</payload_hash>
+<remote_update_set display_value="Email Notifications Template">776f7b0737fd93009bb6ded993990e14</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-05-06 00:32:40</sys_created_on>
+<sys_id>ff6f334737fd93009bb6ded993990e22</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16332b2c7cd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-05-06 00:32:40</sys_updated_on>
+<table/>
+<target_name>notification_logo_width.Notifications</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>46c4770f0cbd93008e8be38f635010eb</update_guid>
+<update_guid_history>46c4770f0cbd93008e8be38f635010eb:1899180835</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
